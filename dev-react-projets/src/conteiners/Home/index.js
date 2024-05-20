@@ -3,15 +3,15 @@ import { useNavigate } from  "react-router-dom";
 import Axios from "axios";
 import People from "../../assest/people.svg";
 import Arrow from "../../assest/arrow.svg";
-
+import H1 from "../../components/Titles";
+import ContainerItens from "../../components/conteiners";
+import Button from "../../components/button";
 import {
   Container,
   Image,
-  H1,
-  ContainerItens,
   Input,
   InputLabel,
-  Button,
+
   
 } from "./styles";
 import axios from "axios";

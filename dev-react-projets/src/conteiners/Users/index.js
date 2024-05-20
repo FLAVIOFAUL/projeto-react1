@@ -7,12 +7,12 @@ import Axios from "axios";
 import Avatar from "./assest/avatar.svg";
 import Arrow from "./assest/arrow.svg";
 import Trash from "./assest/trash.svg";
+import  H1  from "../../Titles/styles";
+import ContainerItens from "../../components/conteiners";
+import Button from "../../components/button";
 import {
   Container,
   Image,
-  H1,
-  ContainerItens,
-  Button,
   User,
 } from "./styles";
 
@@ -44,7 +44,7 @@ function Users() {
     <Container>
       <Image alt="logo-imagem" src={Avatar} />
 
-      <ContainerItens>
+      <ContainerItens isBluer={true}>
         <H1>Usuários</H1>
 
         <ul>
@@ -58,7 +58,7 @@ function Users() {
           ))}
         </ul>
 
-        <Button onClick={goBackPage} >
+        <Button isBACK={true} onClick={goBackPage} >
         <img alt="seta" src={Arrow} />  Voltar
           
         </Button>
